@@ -1,0 +1,15 @@
+<?php
+namespace App\Repository\Setting;
+
+interface TripTypeInterface{
+
+    public function getAll();
+
+    public function store(array $data);
+
+    public function delete($id);
+
+    public function edit($id);
+
+    public function update(array $data, $id);
+}
